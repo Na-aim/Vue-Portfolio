@@ -9,7 +9,7 @@
 
 </div>
 <div class="image">
-<img src="../assets/mbpic.jpg" alt=" A pictuer of me " width="300" height="600">
+<img src="../assets/pic.jpg" alt=" A pictuer of me ">
 </div>
 </div>
 
