@@ -10,9 +10,7 @@
 </div>
 <div class="content">
 <h3> my name is na-aim fredericks and i am a font-end developer </h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi error molestias
-impedit officia! Exercitationem dignissimos esse eos quas nisi impedit delectus,
-voluptate ullam iste nostrum at. Dolor culpa eaque omnis.</p>
+<p>I am Na-aim Fredericks and I love web devlopment like who does not love the ability to create, and I demonstrate a strong power of analytical reasoning. The reason why i love web devlopment is because front-end web development is an exciting career because it's always evolving and constantly changing.</p>
 <div class="box-container">
     <div class="box">
         <p> <span> age : </span> 21 </p>
