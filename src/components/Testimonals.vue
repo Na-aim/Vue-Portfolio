@@ -1,0 +1,338 @@
+<template>  
+<h1 class="heading"> My <span> Testimonals</span> </h1>
+  <div v-for="testimonial of testimonials" :key="testimonial.id" class="container5">
+       
+    <div class="row">
+        <div class="">
+            <div class="our-team">
+                <div class="pic">
+                    <div class="layer-1">
+                        <div class="layer-2">
+                            <div class="layer-3">
+                                <img :src="`${testimonial.img}`" alt="">
+                                <!-- <img src="../assets/Alex.jpg" alt=""> -->
+                                <div class="social">
+                                    <ul class="social-icon">
+                                        <li><a href="#" class="fab fa-facebook"></a></li>
+                                        <li><a href="#" class="fab fa-linkedin"></a></li>
+                                        <li><a href="#" class="fab fa-twitter"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="title">{{testimonial.name}}</h3>
+                            <!-- Alex Sexwale -->
+                        <span class="post">{{testimonial.relation}}</span>
+                            <!-- Leacturer -->
+                    </div>
+                </div>
+                <p class="description">
+                    {{testimonial.quote}}
+                    <!-- Na-aim thrives in doing better than the previous day.He has a strong determination to do anything.He makes decisions with confidence.. -->
+                </p>
+            </div>
+        </div>
+        <!-- <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <div class="layer-1">
+                        <div class="layer-2">
+                            <div class="layer-3">
+                                <img src="../assets/Muneeb.jpg" alt="">
+                                <div class="social">
+                                    <ul class="social-icon">
+                                        <li><a href="#" class="fab fa-facebook"></a></li>
+                                        <li><a href="#" class="fab fa-linkedin"></a></li>
+                                        <li><a href="#" class="fab fa-twitter"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="title">Muneeb</h3>
+                        <span class="post">Colleague</span>
+                    </div>
+                </div>
+                <p class="description">
+                    Na-aim, a young man that has so much potential , if he puts his full focus and full concentration to a task then he will ace it. He is an excellent colleague and friend and he works very well in groups.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <div class="layer-1">
+                        <div class="layer-2">
+                            <div class="layer-3">
+                                <img src="../assets/Yaseen.jpg" alt="">
+                                <div class="social">
+                                    <ul class="social-icon">
+                                        <li><a href="#" class="fab fa-facebook"></a></li>
+                                        <li><a href="#" class="fab fa-linkedin"></a></li>
+                                        <li><a href="#" class="fab fa-twitter"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="title">Yaseen</h3>
+                        <span class="post">Colleague</span>
+                    </div>
+                </div>
+                <p class="description">
+                    Na-aim is a very enthusiastic person who strive to do his best in any and every aspect of his projects that comes his way.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <div class="layer-1">
+                        <div class="layer-2">
+                            <div class="layer-3">
+                                <img src="../assets/Nadeem.jpg" alt="">
+                                <div class="social">
+                                    <ul class="social-icon">
+                                        <li><a href="#" class="fab fa-facebook"></a></li>
+                                        <li><a href="#" class="fab fa-linkedin"></a></li>
+                                        <li><a href="#" class="fab fa-twitter"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="title">Nadeem</h3>
+                        <span class="post">Colleague</span>
+                    </div>
+                </div>
+                <p class="description">
+                    Na-aim is an excellent team player as well as a leader he knows when to follow an when to take charge as a leader an i personally think thats the most important part of a web developer.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <div class="layer-1">
+                        <div class="layer-2">
+                            <div class="layer-3">
+                                <img src="../assets/Sima.jpg" alt="">
+                                <div class="social">
+                                    <ul class="social-icon">
+                                        <li><a href="#" class="fab fa-facebook"></a></li>
+                                        <li><a href="#" class="fab fa-linkedin"></a></li>
+                                        <li><a href="#" class="fab fa-twitter"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="title">Simamkele</h3>
+                        <span class="post">Colleague</span>
+                    </div>
+                </div>
+                <p class="description">
+                    Na-aim is not only a fun guy to be arround but he is a determind coder who is not afraid to walk the extra mile to complete a task at hand.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <div class="pic">
+                    <div class="layer-1">
+                        <div class="layer-2">
+                            <div class="layer-3">
+                                <img src="../assets/Teddy.jpg" alt="">
+                                <div class="social">
+                                    <ul class="social-icon">
+                                        <li><a href="#" class="fab fa-facebook"></a></li>
+                                        <li><a href="#" class="fab fa-linkedin"></a></li>
+                                        <li><a href="#" class="fab fa-twitter"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="title">Bongani</h3>
+                        <span class="post">Colleague</span>
+                    </div>
+                </div>
+                <p class="description">
+                   Na-aim is a person that interacts with the people around him and is dedicated to given tasks.He's also approachable in cases where a person needs assistance in any way.
+                </p>
+            </div>
+        </div> -->
+    </div>
+</div>
+</template>
+
+<script>
+export default {
+   data(){
+            return {
+        testimonials:[ 
+            {"name":" Alex Sexwale","id":1,"img":"https://i.postimg.cc/BQKGs6b5/Alex.jpg","quote":" Na-aim thrives in doing better than the previous day.He has a strong determination to do anything.He makes decisions with confidence..","relation":"Lecturer"
+        },
+
+        {"name":"Muneeb Davids","id":2,"img":"https://i.postimg.cc/g0bbtPKz/Muneeb.jpg", "quote":" Na-aim, a young man that has so much potential , if he puts his full focus and full concentration to a task then he will ace it. He is an excellent colleague and friend and he works very well in groups.","relation":"Colleague"
+        },
+        
+        {"name":" Yaseen Davids","id":3,"img":"https://i.postimg.cc/LsGD3HkD/Yaseen.jpg","quote":" Na-aim is a very enthusiastic person who strive to do his best in any and every aspect of his projects that comes his way.","relation":"Colleague"
+        },
+        
+        {"name":"  Nadeem Jhonson","id":4,"img":"https://i.postimg.cc/9Mvk0dNW/Nadeem.jpg","quote":"Na-aim is an excellent team player as well as a leader he knows when to follow an when to take charge as a leader an i personally think thats the most important part of a web developer.","relation":"Colleague"
+        },
+        
+        {"name":" Simamkele January","id":5,"img":"https://i.postimg.cc/Px9qq7jP/Sima.jpg","quote":" Na-aim is not only a fun guy to be arround but he is a determind coder who is not afraid to walk the extra mile to complete a task at hand.","relation":"Colleague"
+        },
+
+        {"name":"  Bongani Nomangola","id":6,"img":"https://i.postimg.cc/4ysSpfZM/Teddy.jpg","quote":"Na-aim is a person that interacts with the people around him and is dedicated to given tasks.He's also approachable in cases where a person needs assistance in any way.","relation":"Colleague"
+        }]
+            }
+        },
+
+        
+        // mounted(){
+        //     fetch('  http://localhost:3000/testimonials')
+        //     .then(res => res.json())
+        //     .then(data => this.testimonials = data)
+        //     .catch(err => console.log(err.message))
+        // }
+}
+</script>
+
+<style>
+.container5{
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.demo{ background: #f8f8f8; }
+.our-team{
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 500px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.our-team .pic{
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+.our-team .layer-1{
+    width: 200%;
+    overflow: hidden;
+    transform: rotate(10deg) translate(-13%, 13%);
+}
+.our-team .layer-2{
+    background: #fff;
+    overflow: hidden;
+    transform: rotate(-16deg) translate(-9%, -13%);
+}
+.our-team .layer-3{
+    width: 51%;
+    margin: 0 auto;
+    transform: rotate(6deg) translateY(5%);
+}
+.our-team img{
+    width: 100%;
+    height: auto;
+}
+.our-team .social{
+    width: 50%;
+    height: 150%;
+    background: linear-gradient(to right, rgba(244, 205, 3, 0), var(--main-color));
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: all 0.3s ease-out 0s;
+}
+.our-team:hover .social{
+    transform: translateX(0px);
+}
+.our-team .social-icon{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    position: absolute;
+    bottom: 95px;
+    right: 15px;
+}
+.our-team .social-icon li a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 13px;
+    color: #000;
+    text-align: center;
+    margin: 4px 0;
+    transform: scale(0);
+    transition: all 0.2s ease-out 0.4s;
+}
+.our-team:hover .social-icon li a{
+    transform: scale(1);
+}
+.our-team .social-icon li a.fa-facebook:hover{ color: var(--main-color); }
+.our-team .social-icon li a.fa-google-plus:hover{ color: #db4437; }
+.our-team .social-icon li a.fa-twitter:hover{ color: var(--main-color); }
+.our-team .team-info{
+    padding: 15px 15px 20px;
+    margin: 25px;
+    background: var(--main-color);
+    border-radius: 3px;
+    text-align: center;
+    position: absolute;
+    bottom: 65px;
+    left: 0;
+    right: 0;
+    transition: all 0.2s ease-out 0s;
+}
+.our-team:hover .team-info{
+    background: #fff;
+}
+.our-team .title{
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+}
+.our-team .post{
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+    color: #000000;
+    margin-top: 5px;
+}
+.our-team .description{
+    padding: 0 20px;
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 20px; }
+}
+@media only screen and (max-width: 767px){
+    .our-team .social-icon{ right: 25px; }
+    .our-team .team-info{ bottom: 30px; }
+}
+@media only screen and (max-width: 767px){
+    .our-team .team-info{ bottom: 65px; }
+}
+</style>

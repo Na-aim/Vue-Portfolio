@@ -1,0 +1,110 @@
+<template>
+<div class="fit">
+<div class="about" id="about">
+
+<h1 class="heading"> about <span> me </span> </h1>
+
+<div class="row-1">
+<div class="image">
+<img src="../assets/pic.jpg" alt="">
+</div>
+<div class="content">
+<h3> my name is na-aim fredericks and i am a font-end developer </h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi error molestias
+impedit officia! Exercitationem dignissimos esse eos quas nisi impedit delectus,
+voluptate ullam iste nostrum at. Dolor culpa eaque omnis.</p>
+<div class="box-container">
+    <div class="box">
+        <p> <span> age : </span> 21 </p>
+        <p> <span> gender : </span> male </p>
+        <p> <span> language : </span> english </p>
+        <p> <span> work : </span> front-end developer </p>
+    </div>
+    <div class="box">
+        <p> <span>freelance : </span> available </p>
+        <p> <span> phone : </span> +123-456-7890 </p>
+        <p> <span> email : </span> shaikhanas@gmail.com </p>
+        <p> <span> country : </span> india </p>
+    </div>
+</div>
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+  
+
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+.fit{
+    padding-top:100px ;
+    padding-left: 10rem;
+    padding-right: 10rem ;
+}
+.heading{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: #111;
+    text-transform: uppercase;
+}
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.about .row-1{
+display: flex;
+flex-wrap: wrap;
+gap:1.5rem;
+padding-bottom: 2rem;
+}
+.about .row-1 .image{
+flex:1 1 25rem;
+}
+.about .row-1 .image img{
+height: 100%;
+width:100%;
+object-fit: cover;
+border:1rem solid #fff;
+border-radius: .5rem;
+box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.about .row-1 .content{
+flex:1 1 50rem;
+}
+
+.about .row-1 .content h3{
+color:#333;
+font-size: 3.5rem;
+}
+.about .row-1 .content p{
+color:#666;
+font-size: 1.7rem;
+padding:.5rem 0;
+}
+.about .row-1 .content .box-container{
+display: flex;
+flex-wrap: wrap;
+gap:1.5rem;
+padding: 5rem 0;
+}
+.about .row-1 .content .box-container .box{
+flex:1 1 20rem;
+}
+.about .row-1 .content .box-container .box span{
+color:var(--main-color); 
+}
+
+/* skills section */
+
+</style>
