@@ -1,16 +1,16 @@
 <template>
- <h1 class="heading"> My <span> Resume </span> </h1>
+ 
   <div class="containe">
-     
+     <h1 class="heading"> My <span> Resume </span> </h1>
     <div class="row">
         <div class="main-timeline">
             <div class="timeline">
                 <div class="timeline-icon"></div>
                 <div class="timeline-content">
                     <span class="date"> 2014 - 2019</span>
-                    <h5 class="title">Nationaltion Senior Certificate</h5>
+                    <h5 class="title">national Senior Certificate</h5>
                     <p class="description">
-                         Got my national senior certificate at Oval North High Secondery.
+                         Got my national senior certificate at Oval North High.
                     </p>
                 </div>
             </div>
@@ -19,7 +19,7 @@
                 <div class="timeline-icon"></div>
                 <div class="timeline-content">
                     <span class="date">Feb 2020 - Feb 2021</span>
-                    <h5 class="title">Volunteering at an ECD</h5>
+                    <h5 class="title">Volunteer at an ECD</h5>
                     <p class="description">
                         Provided children with opportunities to develop fundamental movement skills by leading activities that focus on physical literacy and expanding their minds with numeracy.
                     </p>
@@ -31,7 +31,7 @@
                     <span class="date">May 2021 - Sep 2021</span>
                     <h5 class="title">Retail and wholesale student NQF L3</h5>
                     <p class="description">
-                        Did a learnership at Passionat about People "PAP" which consisted of 4 months theory on retail and wholesale and month of practical which was at Levi in Waterfront.
+                        Did a learnership at Passionate about People "PAP" which consisted of 4 months theory on retail and wholesale and a one month practical which were at Levi in Waterfront.
                     </p>
                 </div>
             </div>
@@ -41,11 +41,10 @@
                     <span class="date">Sep 2021 -  2023</span>
                     <h5 class="title">Life Choices Academy</h5>
                     <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+                       Life Choices Academy is a bootcamp for web developers where you get to learn all the fundementals of conding is taught, languages such as HTML, CSS and Javascript.
                     </p>
                 </div>
-            </div>
-            
+            </div> 
         </div>
     </div>
 </div>
@@ -57,7 +56,7 @@ export default {
 }
 </script>
 #39b3ff
-<style>
+<style scoped>
 .containe{
     /* display: flex;
     justify-content: center !important; */
@@ -228,5 +227,8 @@ export default {
     }
     .main-timeline .timeline-content:before{ left: -7.3px; }
     .main-timeline .timeline-content:after{ left: -14%; }
+}
+.description{
+    text-decoration: none;
 }
 </style>

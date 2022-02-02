@@ -1,10 +1,10 @@
 <template>  
-<h1 class="heading"> My <span> Testimonals</span> </h1>
+ <h1 class="heading"> My <span> Testimonals</span> </h1>
   <div v-for="testimonial of testimonials" :key="testimonial.id" class="container5">
-       
+      
     <div class="row">
         <div class="">
-            <div class="our-team">
+            <div class=" our-team">
                 <div class="pic">
                     <div class="layer-1">
                         <div class="layer-2">
@@ -208,7 +208,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .container5{
     padding-top: 80px;
     display: flex;

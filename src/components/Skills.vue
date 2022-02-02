@@ -1,7 +1,7 @@
 <template>
-
-<div class="container3">
 <h1 class="heading"> <span> my </span> skills </h1>
+<div class="container3">
+
 </div>
  <div class="container">
     <div class="row">
@@ -53,6 +53,7 @@ export default {
     padding-top: 100px;
     padding-left: 10rem;
     padding-right: 10rem;
+    padding-bottom: 100px;
 }
 .progress{
     height: 20px;

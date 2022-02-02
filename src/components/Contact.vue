@@ -44,8 +44,8 @@ export default {
 .boxed{
     padding-top:40px ;
     padding-bottom: 50px;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    /* padding-left: 10rem;
+    padding-right: 10rem; */
 }
 
 .form-container{

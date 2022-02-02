@@ -80,7 +80,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
  .boxedd{
     padding-top: 190px;
@@ -118,7 +118,6 @@ export default {
     display: block;
     font-size: 17px;
     color: #000000;
-    text-transform: capitalize;
     margin-bottom: 10px;
 }
 .our-teams .social{

@@ -29,11 +29,13 @@
   </div>
   <div class="mobile-nav">
     <nav class="m-nav">
-      <a href="#landing-page" class="mobile">Home</a>
-      <a href="#about-page" class="mobile">About</a>
-      <a href="#projects-page" class="mobile">Projects</a>
-      <a href="#testimonials-page" class="mobile">Testimonals</a>
-      <a href="#contact-page" class="mobile">Contact</a>
+      <a href="#Home" class="mobile">Home</a>
+      <a href="#About" class="mobile">About</a>
+      <a href="#Resume" class="mobile">Resume</a>
+       <a href="#Skills" class="mobile">Skills</a>
+      <a href="#Projects" class="mobile">Projects</a>
+      <a href="#Testimonals" class="mobile">Testimonals</a>
+      <a href="#Contact" class="mobile">Contact</a>
     </nav>
   </div>
 </template>
@@ -59,7 +61,7 @@ margin:0; padding:0;
 box-sizing: border-box;
 outline: none; border:none;
 text-decoration: none;
-text-transform: capitalize;
+
 transition: all .3s linear;
 line-height: 1.5;
 }
