@@ -1,6 +1,6 @@
 <template>
 <div class="nav-container">
-   <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-code-square" viewBox="0 0 16 16">
+   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-code-square" viewBox="0 0 16 16">
   <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
   <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
 </svg>
@@ -74,7 +74,7 @@ padding-right: 10rem */
 }
 
 .nav-container {
-  padding: 10px;
+  padding: 3px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -126,7 +126,7 @@ padding-right: 10rem */
 
   margin: 0 auto 5px;
 
-  background-color: #000;
+  background-color: var(--main-color);
 
   transition: 0.5s ease-in-out;
 }
@@ -200,7 +200,7 @@ nav a:hover {
   font-size: 1rem;
   color: #fff;
   transition: 200ms ease-in-out;
-  background-color: rgba(0, 0, 0, 30%);
+ 
   padding: 10px;
 }
 

@@ -4,7 +4,7 @@
 <div class="content">
 <span class="hi"> hi there... </span>
 <h3> i am <span> na-aim fredericks </span> </h3>
-<p class="info"> i am a web developer </p>
+<p class="info"> i am an aspiring web developer </p>
 <p class="text"> </p>
 
 </div>

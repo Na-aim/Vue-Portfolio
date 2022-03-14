@@ -1,7 +1,7 @@
 <template>
-<h1 class="heading"> <span> my </span> skills </h1>
-<div class="container3">
 
+<div class="container3">
+<h1 class="heading"> <span> my </span> skills </h1>
 </div>
  <div class="container">
     <div class="row">

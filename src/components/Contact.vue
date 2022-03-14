@@ -10,20 +10,20 @@
                     <!-- <div class="form-icon">
                         <i class="fa fa-envelope-open"></i>
                     </div> -->
-                    <form class="form-horizontal" action="https://formspree.io/f/xgedaazd" method="POST" target="_blank">
+                    <form class="form-horizontal" @submit.prevent="handleSubmit">
                         <h3 class="title">Contact Me</h3>
                         <div class="form-group">
                             <span class="input-icon"><i class="fa fa-user"></i></span>
-                            <input class="form-control" type="text" placeholder="Name" name="name">
+                            <input class="form-control" type="text" placeholder="Name" name="name" required v-model="name">
                         </div>
                         <div class="form-group">
                             <span class="input-icon"><i class="fa fa-envelope"></i></span>
-                            <input class="form-control" type="email" placeholder="Email Address" name="Email">
+                            <input class="form-control" type="email" placeholder="Email Address" name="Email" required v-model="email">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" rows="4" cols="120" placeholder="Message" name="message"></textarea>
+                            <textarea class="form-control" rows="4" cols="120" placeholder="Message" name="message" required v-model="message"></textarea>
                         </div>
-                        <button class="btn signin">Send Message <i class="fa fa-long-arrow-alt-right"></i></button>
+                        <button class="btn signin" type="submit">Send Message <i class="fa fa-long-arrow-alt-right"></i></button>
                     </form>
                 </div>
             </div>
@@ -36,6 +36,32 @@
 
 <script>
 export default {
+    data() {
+        return {
+            email: '',
+            name: '',
+            message: '',
+        }
+    },
+    methods: {
+        handleSubmit() {
+            console.log('this.name, this.email, this.message') 
+            fetch(' https://express-backend1.herokuapp.com/contact', {
+  method: 'POST',
+  body: JSON.stringify({
+    name: this.name,
+    email: this.email,
+    message: this.message,
+  }),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+})
+  .then((response) => response.json())
+  .then((json) => alert(json.msg))
+  .catch((e) =>alert(e.msg));
+        }
+    }
 
 }
 </script>

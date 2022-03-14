@@ -1,22 +1,22 @@
 <template>  
- <h1 class="heading"> My <span> Testimonals</span> </h1>
-  <div v-for="testimonial of testimonials" :key="testimonial.id" class="container5">
-      
+ 
+  <div class="container5">
+      <h1 class="heading"> My <span> Testimonals</span> </h1>
     <div class="row">
-        <div class="">
+        <div class="col-md-4 col-sm-12"  v-for="testimonial of testimonials" :key="testimonial.id" >
             <div class=" our-team">
                 <div class="pic">
                     <div class="layer-1">
                         <div class="layer-2">
                             <div class="layer-3">
-                                <img :src="`${testimonial.img}`" alt="">
+                                <img :src="testimonial.img" alt="">
                                 <!-- <img src="../assets/Alex.jpg" alt=""> -->
                                 <div class="social">
-                                    <ul class="social-icon">
+                                    <!-- <ul class="social-icon">
                                         <li><a href="#" class="fab fa-facebook"></a></li>
                                         <li><a href="#" class="fab fa-linkedin"></a></li>
                                         <li><a href="#" class="fab fa-twitter"></a></li>
-                                    </ul>
+                                    </ul> -->
                                 </div>
                             </div>
                         </div>
@@ -173,47 +173,29 @@
 </div>
 </template>
 
+
+
 <script>
 export default {
    data(){
             return {
-        testimonials:[ 
-            {"name":" Alex Sexwale","id":1,"img":"https://i.postimg.cc/BQKGs6b5/Alex.jpg","quote":" Na-aim thrives in doing better than the previous day.He has a strong determination to do anything.He makes decisions with confidence..","relation":"Lecturer"
-        },
-
-        {"name":"Muneeb Davids","id":2,"img":"https://i.postimg.cc/g0bbtPKz/Muneeb.jpg", "quote":" Na-aim, a young man that has so much potential , if he puts his full focus and full concentration to a task then he will ace it. He is an excellent colleague and friend and he works very well in groups.","relation":"Colleague"
-        },
-        
-        {"name":" Yaseen Davids","id":3,"img":"https://i.postimg.cc/LsGD3HkD/Yaseen.jpg","quote":" Na-aim is a very enthusiastic person who strive to do his best in any and every aspect of his projects that comes his way.","relation":"Colleague"
-        },
-        
-        {"name":"  Nadeem Jhonson","id":4,"img":"https://i.postimg.cc/9Mvk0dNW/Nadeem.jpg","quote":"Na-aim is an excellent team player as well as a leader he knows when to follow an when to take charge as a leader an i personally think thats the most important part of a web developer.","relation":"Colleague"
-        },
-        
-        {"name":" Simamkele January","id":5,"img":"https://i.postimg.cc/Px9qq7jP/Sima.jpg","quote":" Na-aim is not only a fun guy to be arround but he is a determind coder who is not afraid to walk the extra mile to complete a task at hand.","relation":"Colleague"
-        },
-
-        {"name":"  Bongani Nomangola","id":6,"img":"https://i.postimg.cc/4ysSpfZM/Teddy.jpg","quote":"Na-aim is a person that interacts with the people around him and is dedicated to given tasks.He's also approachable in cases where a person needs assistance in any way.","relation":"Colleague"
-        }]
+        testimonials:[]
             }
         },
 
         
-        // mounted(){
-        //     fetch('  http://localhost:3000/testimonials')
-        //     .then(res => res.json())
-        //     .then(data => this.testimonials = data)
-        //     .catch(err => console.log(err.message))
-        // }
+        mounted(){
+            fetch('  https://express-backend1.herokuapp.com/testimonal')
+            .then(res => res.json())
+            .then(data => this.testimonials = data)
+            .catch(err => console.log(err.message))
+        }
 }
 </script>
 
 <style scoped>
 .container5{
-    padding-top: 80px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding-top: 100px;
     padding-left: 10rem;
     padding-right: 10rem;
 }
@@ -248,7 +230,9 @@ export default {
 }
 .our-team img{
     width: 100%;
-    height: auto;
+    height: 350px;
+    object-fit: cover;
+    flex-wrap: wrap;
 }
 .our-team .social{
     width: 50%;
@@ -260,6 +244,7 @@ export default {
     transform: translateX(100%);
     transition: all 0.3s ease-out 0s;
 }
+
 .our-team:hover .social{
     transform: translateX(0px);
 }
@@ -299,7 +284,7 @@ export default {
     border-radius: 3px;
     text-align: center;
     position: absolute;
-    bottom: 65px;
+    bottom: 100px;
     left: 0;
     right: 0;
     transition: all 0.2s ease-out 0s;
@@ -319,6 +304,10 @@ export default {
     color: #000000;
     margin-top: 5px;
 }
+.description{
+    margin-top: -20px;
+}
+
 .our-team .description{
     padding: 0 20px;
     font-size: 14px;
@@ -327,10 +316,12 @@ export default {
 }
 @media only screen and (max-width: 990px){
     .our-team{ margin-bottom: 20px; }
+     
 }
 @media only screen and (max-width: 767px){
     .our-team .social-icon{ right: 25px; }
     .our-team .team-info{ bottom: 30px; }
+   
 }
 @media only screen and (max-width: 767px){
     .our-team .team-info{ bottom: 65px; }

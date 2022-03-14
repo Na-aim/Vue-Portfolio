@@ -1,73 +1,28 @@
 <template>
-  <h1 class="heading"> My <span> Projects </span> </h1>
-<div class="boxedd">
+<div class="boxedx"> <h1 class="heading"> My <span> Projects </span> </h1></div>
+ 
+<div  class="boxedd">
   
  
 <div class="container">
-    <div class="row">
-        <div class="col-md-3 col-sm-6">
+    <div  class="row">
+        <div class="col-md-3 col-sm-6" v-for="project in projects" :key="project.id" >
             <div class="our-teams">
                 <div class="pic">
-                    <img src="../assets/projA.jpg">
+                    <img :src="project.img">
                 </div>
                 <div class="teams-content">
-                    <h3 class="title">Portfolio</h3>
-                    <span class="post">Html Css</span>
+                    <h3 class="title">{{project.title}}</h3>
+                    <span class="post">{{project.post}}</span>
                     <ul class="social">
-                        <li><a href="https://github.com/Na-aim/Portfolio_0ne-main-main" target="_blank" class="fab fa-github" ></a></li>
-                        <li><a href="https://fervent-ramanujan-3e98df.netlify.app" target="_blank" class="fas fa-eye"></a></li>
+                        <li><a :href="project.live" target="_blank" class="fab fa-github" ></a></li>
+                        <li>-</li>
+                        <li><a :href="project.github" target="_blank" class="fas fa-eye"></a></li>
                     </ul>
                 </div>
             </div>
         </div>
  
-        <div class="col-md-3 col-sm-6">
-            <div class="our-teams">
-                <div class="pic">
-                    <img src="../assets/projB.jpg">
-                </div>
-                <div class="teams-content">
-                    <h3 class="title">Point of Sale</h3>
-                    <span class="post">HTML CSS JS</span>
-                    <ul class="social">
-                         <li><a href="https://github.com/Na-aim/naaims_P.O.S" target="_blank" class="fab fa-github"></a></li>
-                        <li><a href="https://na-aim-pos.netlify.app" target="_blank" class="fas fa-eye"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-      
-       <div class="col-md-3 col-sm-6">
-            <div class="our-teams">
-                <div class="pic">
-                    <img src="../assets/projC.jpg">
-                </div>
-                <div class="teams-content">
-                    <h3 class="title">Pokeidex</h3>
-                    <span class="post">HTML CS JS</span>
-                    <ul class="social">
-                         <li><a href="https://github.com/Na-aim/Pokedex" target="_blank" class="fab fa-github"></a></li>
-                        <li><a href="#http://127.0.0.1:5500/index.html" target="_blank" class="fas fa-eye"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-      
-       <div class="col-md-3 col-sm-6">
-            <div class="our-teams">
-                <div class="pic">
-                    <img src="../assets/projD.jpg">
-                </div>
-                <div class="teams-content">
-                    <h3 class="title">Temperature Convertor</h3>
-                    <span class="post">HTML CSS JS</span>
-                    <ul class="social">
-                        <li><a href="https://github.com/Na-aim/temp-cal" target="_blank" class="fab fa-github"></a></li>
-                        <li><a href="#" target="_blank" class="fas fa-eye"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 </div>
@@ -75,18 +30,35 @@
 </template>
 
 <script>
-export default {
 
+
+export default {
+        data() {
+            return {
+                projects:[]
+            }
+        },
+        mounted() {
+            fetch('https://express-backend1.herokuapp.com/projects')
+            .then(response => response.json())
+            .then(data => this.projects = data)
+            .catch(error => console.log(error.message))
+        }
 }
 </script>
 
 <style scoped>
 
+.boxedx{
+    padding-top: 100px;
+    
+}
  .boxedd{
-    padding-top: 190px;
+    padding-top: 100px;
     padding-bottom:200px ;
     padding-left: 10rem;
     padding-right: 10rem;
+    
 }
 
 .our-teams .pic{
@@ -120,14 +92,18 @@ export default {
     color: #000000;
     margin-bottom: 10px;
 }
+/* .social{
+    padding-left: -10;
+    position: absolute;
+} */
 .our-teams .social{
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0; 
 }
 .our-teams .social li{ display: inline-block; }
 .our-teams .social li a{
-    display: block;
+    display: block; 
     width: 35px;
     height: 35px;
     line-height: 35px;

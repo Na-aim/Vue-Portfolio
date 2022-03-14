@@ -9,20 +9,20 @@
 <img src="../assets/pic.jpg" alt="">
 </div>
 <div class="content">
-<h3> my name is na-aim fredericks and i am a front-end developer </h3>
+<h3> My name is Na-aim Fredericks and i am a front-end developer </h3>
 <p>I am Na-aim Fredericks and I love web development like who does not love the ability to create, and I demonstrate a strong power of analytical reasoning. The reason why i love web development is because front-end web development is an exciting career because it's always evolving and constantly changing.</p>
 <div class="box-container">
     <div class="box">
-        <p> <span> age : </span> 22 </p>
-        <p> <span> gender : </span> male </p>
-        <p> <span> language : </span> english </p>
-        <p> <span> work : </span> front-end developer </p>
+        <p> <span> Age : </span> 22 </p>
+        <p> <span> Gender : </span> male </p>
+        <p> <span> Language : </span> english </p>
+        <p> <span> Work : </span> front-end developer </p>
     </div>
     <div class="box">
-        <p> <span>freelance : </span> available </p>
-        <p> <span> phone : </span> 068-573-1144 </p>
-        <p> <span> email : </span> fredericksnaaim13@gmail.com </p>
-        <p> <span> country : </span> South Africa </p>
+        <p> <span>Freelance : </span> available </p>
+        <p> <span> Phone : </span> 068-573-1144 </p>
+        <p> <span> Email : </span> fredericksnaaim13@gmail.com </p>
+        <p> <span> Country : </span> South Africa </p>
     </div>
 </div>
 

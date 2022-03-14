@@ -8,7 +8,7 @@
                 <div class="timeline-icon"></div>
                 <div class="timeline-content">
                     <span class="date"> 2014 - 2019</span>
-                    <h5 class="title">national Senior Certificate</h5>
+                    <h5 class="title">National Senior Certificate</h5>
                     <p class="description">
                          Got my national senior certificate at Oval North High.
                     </p>
@@ -57,6 +57,10 @@ export default {
 </script>
 #39b3ff
 <style scoped>
+/* .timeline-icon{
+    position: inherit;
+} */
+
 .containe{
     /* display: flex;
     justify-content: center !important; */
@@ -111,6 +115,7 @@ export default {
     right: auto;
     left: -11px;
 }
+
 .main-timeline .timeline-icon{
     width: 24px;
     height: 24px;
