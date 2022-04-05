@@ -53,7 +53,6 @@ margin:0; padding:0;
 box-sizing: border-box;
 outline: none; border:none;
 text-decoration: none;
-
 transition: all 0.9s linear;
 line-height: 1.5;
 }
@@ -82,7 +81,7 @@ padding-right: 10rem */
   width: 100%;
   background: linear-gradient(to right, #882222, var(--main-color));
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   transition: 0.3s ease-in-out;
 
 }
