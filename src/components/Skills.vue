@@ -3,7 +3,7 @@
 <div class="container3">
 <h1 class="heading"> <span> my </span> skills </h1>
 </div>
- <div class="container">
+ <div class="container" >
     <div class="row">
         <div class="col-md-6">
             <div class="progress pink">

@@ -54,7 +54,7 @@ box-sizing: border-box;
 outline: none; border:none;
 text-decoration: none;
 
-transition: all .3s linear;
+transition: all 0.9s linear;
 line-height: 1.5;
 }
 html{

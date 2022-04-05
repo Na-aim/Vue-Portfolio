@@ -28,11 +28,12 @@ export default {
 .boxddd{
     padding-left: 10rem;
     padding-right: 10rem;
+    padding-top: 80px;
 }
 
 .home{
     padding: 1rem 5%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     
 }
 

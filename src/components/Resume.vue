@@ -4,37 +4,6 @@
      <h1 class="heading"> My <span> Resume </span> </h1>
     <div class="row">
         <div class="main-timeline">
-            <div class="timeline">
-                <div class="timeline-icon"></div>
-                <div class="timeline-content">
-                    <span class="date"> 2014 - 2019</span>
-                    <h5 class="title">National Senior Certificate</h5>
-                    <p class="description">
-                         Got my national senior certificate at Oval North High.
-                    </p>
-                </div>
-            </div>
- 
-            <div class="timeline">
-                <div class="timeline-icon"></div>
-                <div class="timeline-content">
-                    <span class="date">Feb 2020 - Feb 2021</span>
-                    <h5 class="title">Volunteer at an ECD</h5>
-                    <p class="description">
-                        Provided children with opportunities to develop fundamental movement skills by leading activities that focus on physical literacy and expanding their minds with numeracy.
-                    </p>
-                </div>
-            </div>
-             <div class="timeline">
-                <div class="timeline-icon"></div>
-                <div class="timeline-content">
-                    <span class="date">May 2021 - Sep 2021</span>
-                    <h5 class="title">Retail and wholesale student NQF L3</h5>
-                    <p class="description">
-                        Did a learnership at Passionate about People "PAP" which consisted of 4 months theory on retail and wholesale and a one month practical which were at Levi in Waterfront.
-                    </p>
-                </div>
-            </div>
              <div class="timeline">
                 <div class="timeline-icon"></div>
                 <div class="timeline-content">
@@ -45,6 +14,39 @@
                     </p>
                 </div>
             </div> 
+
+            <div class="timeline">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content">
+                    <span class="date">May 2021 - Sep 2021</span>
+                    <h5 class="title">Retail and wholesale student NQF L3</h5>
+                    <p class="description">
+                        I did a learnership program at Passionate about People "PAP" which consisted of 4 months of theory on retail and wholesale and a one-month practical at Levi in Waterfront.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content">
+                    <span class="date">Feb 2020 - Feb 2021</span>
+                    <h5 class="title">Volunteer at an ECD</h5>
+                    <p class="description">
+                        Provided children with opportunities to develop fundamental movement skills by leading activities that focus on physical literacy and expanding their minds with numeracy.
+                    </p>
+                </div>
+            </div>
+            
+             <div class="timeline">
+                <div class="timeline-icon"></div>
+                <div class="timeline-content">
+                    <span class="date"> 2014 - 2019</span>
+                    <h5 class="title">National Senior Certificate</h5>
+                    <p class="description">
+                         Got my national senior certificate at Oval North High.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -9,8 +9,9 @@
 <img src="../assets/pic.jpg" alt="">
 </div>
 <div class="content">
-<h3> My name is Na-aim Fredericks and i am a front-end developer </h3>
-<p>I am Na-aim Fredericks and I love web development like who does not love the ability to create, and I demonstrate a strong power of analytical reasoning. The reason why i love web development is because front-end web development is an exciting career because it's always evolving and constantly changing.</p>
+    <h2>PASSION</h2>
+<p>I have a strong passion for front-end development. I like the creative aspect of coding and demonstrating my analytical reasoning that I can showcase through powerful designs.</p>
+<h2>BIO</h2>
 <div class="box-container">
     <div class="box">
         <p> <span> Age : </span> 22 </p>
@@ -43,7 +44,7 @@ export default {
 }
 </script>
 
-<style>
+<style >
 .fit{
     padding-top:100px ;
     padding-left: 10rem;
